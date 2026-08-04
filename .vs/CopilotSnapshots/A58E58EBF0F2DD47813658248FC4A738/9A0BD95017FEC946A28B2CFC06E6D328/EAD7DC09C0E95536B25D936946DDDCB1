@@ -1,0 +1,30 @@
+﻿<Application x:Class="AI_WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AI_WPF"
+             xmlns:vm="clr-namespace:AI_WPF.ViewModels"
+             xmlns:views="clr-namespace:AI_WPF.Views">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Theme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type vm:CatalogueViewModel}">
+                <views:CatalogueView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SalesViewModel}">
+                <views:SalesView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SaleOrderDetailsViewModel}">
+                <views:SaleOrderDetailsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ProductionViewModel}">
+                <views:ProductionView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ProductionOrderDetailsViewModel}">
+                <views:ProductionOrderDetailsView/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
