@@ -51,7 +51,7 @@ namespace AI_WPF.Services
         /// </summary>
         private void OnSaleOrderApproved(SaleOrder order)
         {
-            // TODO (workshop): create a production order for `order` using `_productionService`.
+            _productionService.CreateFromSaleOrder(order);
         }
     }
 }

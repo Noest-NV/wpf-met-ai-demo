@@ -21,7 +21,7 @@ namespace AI_WPF.Services
                 SaleOrderId = saleOrder.Id,
                 Robot = robot,
                 Status = ProductionOrderStatus.InProgress,
-                EstimatedCompletion = DateTime.Now.AddDays(7)
+                EstimatedCompletion = DateTime.Now.AddDays(saleOrder.Id)
             };
 
             // Seed with a few generic components so the details screen has something to show.
