@@ -4,8 +4,8 @@
     <!-- Palette -->
     <Color x:Key="BackgroundColor">#F5F6FA</Color>
     <Color x:Key="SurfaceColor">#FFFFFF</Color>
-    <Color x:Key="AccentColor">#4C6EF5</Color>
-    <Color x:Key="AccentColorHover">#3B5BDB</Color>
+    <Color x:Key="AccentColor">#2B4ACB</Color>
+    <Color x:Key="AccentColorHover">#1E3A8A</Color>
     <Color x:Key="TextPrimaryColor">#1F2937</Color>
     <Color x:Key="TextSecondaryColor">#6B7280</Color>
     <Color x:Key="BorderColor">#E5E7EB</Color>
