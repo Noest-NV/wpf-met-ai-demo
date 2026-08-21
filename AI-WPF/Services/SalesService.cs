@@ -35,23 +35,12 @@ namespace AI_WPF.Services
         {
             if (order == null) return;
             order.Status = SaleOrderStatus.Approved;
-            OnSaleOrderApproved(order);
         }
 
         public void Reject(SaleOrder order)
         {
             if (order == null) return;
             order.Status = SaleOrderStatus.Rejected;
-        }
-
-        /// <summary>
-        /// Placeholder hook (workshop demo): when a sale order is approved, a production
-        /// order should automatically be created for it. Implement this live with Copilot
-        /// using <see cref="IProductionService.CreateFromSaleOrder"/>.
-        /// </summary>
-        private void OnSaleOrderApproved(SaleOrder order)
-        {
-            // TODO (workshop): create a production order for `order` using `_productionService`.
         }
     }
 }
