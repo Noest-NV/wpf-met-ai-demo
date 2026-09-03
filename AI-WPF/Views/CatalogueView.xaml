@@ -34,7 +34,7 @@
                                 <StackPanel Orientation="Horizontal" Margin="0,12,0,0" VerticalAlignment="Center">
                                     <TextBlock Text="{Binding Price, StringFormat={}{0:C0}}" FontSize="18" FontWeight="SemiBold"/>
                                     <Button Content="Buy now"
-                                            Style="{StaticResource PrimaryButton}"
+                                            Style="{StaticResource BuyNowButton}"
                                             Margin="12,0,0,0"
                                             Command="{Binding DataContext.BuyNowCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                             CommandParameter="{Binding}" />
